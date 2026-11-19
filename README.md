@@ -4,7 +4,7 @@ Keep the context. Stop repeating the work.
 
 Jeda is a small instruction skill for agents doing multi-step tasks. Before another search, read, or retry, the agent checks what evidence is actually missing. Valid evidence can be reused. Changed requirements, stale sources, and unverified writes still need work.
 
-**Experimental, v0.2.1. Token savings are not established.** The recorded trial used fewer tool calls with Jeda, but transmitted more request bytes. Both findings belong here.
+**Experimental, v0.2.1. Token savings are not established.** The [108-session token trial](evidence/token-trial/README.md) found higher recorded gateway token totals for both Jeda variants, with unequal completion rates. Three timed-out requests have unknown usage. Do not install Jeda on the assumption that it saves tokens or cost.
 
 [Read the skill](SKILL.md) · [Inspect the evidence](evidence/README.md) · [Evaluation protocol](EVALUATION.md) · [Security](SECURITY.md)
 

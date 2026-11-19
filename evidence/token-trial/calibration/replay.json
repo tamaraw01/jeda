@@ -1,0 +1,147 @@
+[
+  {
+    "model": "hermes-combo",
+    "payload_sha256": "278cd5e58939b1b04018986e1bae9df2cbc56dea81ae6d77012664058847ebed",
+    "request_bytes": 9805,
+    "response": {
+      "id": "resp_af80d420d2145b7182cd639a8a0be8b9",
+      "object": "chat.completion",
+      "created": 1795109347,
+      "model": "deepseek-v4.1-flash-uncensored",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": null,
+            "tool_calls": [
+              {
+                "id": "call_b3b90e362246477485aa290b",
+                "type": "function",
+                "function": {
+                  "name": "read_source",
+                  "arguments": "{\"id\":\"current\"}"
+                }
+              }
+            ]
+          },
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 3136,
+        "completion_tokens": 47,
+        "total_tokens": 3183
+      }
+    }
+  },
+  {
+    "model": "hermes-combo",
+    "payload_sha256": "019e2cd8ebfe5faf815bff762f1750e55b167ab7701fd032c5f801e6855a2fb3",
+    "request_bytes": 12184,
+    "response": {
+      "id": "resp_294dd68fe095a2f923744d255824eceb",
+      "object": "chat.completion",
+      "created": 1795109348,
+      "model": "deepseek-v4.1-flash-uncensored",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": null,
+            "tool_calls": [
+              {
+                "id": "call_1a46ba340a9c42ecb049521a",
+                "type": "function",
+                "function": {
+                  "name": "read_source",
+                  "arguments": "{\"id\":\"current\"}"
+                }
+              }
+            ]
+          },
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 3567,
+        "completion_tokens": 77,
+        "total_tokens": 3644
+      }
+    }
+  },
+  {
+    "model": "ag/claude-sonnet-4-6",
+    "payload_sha256": "278cd5e58939b1b04018986e1bae9df2cbc56dea81ae6d77012664058847ebed",
+    "request_bytes": 9813,
+    "error": "HTTPError: HTTP Error 503: Service Unavailable"
+  },
+  {
+    "model": "ag/claude-sonnet-4-6",
+    "payload_sha256": "019e2cd8ebfe5faf815bff762f1750e55b167ab7701fd032c5f801e6855a2fb3",
+    "request_bytes": 12192,
+    "error": "HTTPError: HTTP Error 503: Service Unavailable"
+  },
+  {
+    "model": "ag/claude-opus-4-6-thinking",
+    "payload_sha256": "278cd5e58939b1b04018986e1bae9df2cbc56dea81ae6d77012664058847ebed",
+    "request_bytes": 9820,
+    "response": {
+      "id": "chatcmpl-msg_vrtx_011ChCgXH7MRoDpdikv9tSvD",
+      "object": "chat.completion",
+      "created": 1795109352,
+      "model": "claude-opus-4-6-thinking",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "id": "call_read_source_1795109352041_0",
+                "type": "function",
+                "function": {
+                  "name": "read_source",
+                  "arguments": "{\"id\":\"current\"}"
+                }
+              }
+            ]
+          },
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5689,
+        "completion_tokens": 54,
+        "total_tokens": 5743
+      }
+    }
+  },
+  {
+    "model": "ag/claude-opus-4-6-thinking",
+    "payload_sha256": "019e2cd8ebfe5faf815bff762f1750e55b167ab7701fd032c5f801e6855a2fb3",
+    "request_bytes": 12199,
+    "response": {
+      "id": "chatcmpl-msg_vrtx_011ChCgXZhFEQmtw1W7KBVBn",
+      "object": "chat.completion",
+      "created": 1795109359,
+      "model": "claude-opus-4-6-thinking",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "\n\nEvidence already available from prior context covers both studies with all requested fields. No source read needed\u2014the question asks to return what was supplied, not to retrieve new data.\n\n```json\n{\n  \"answer\": {\n    \"study_A\": {\n      \"method\": \"randomized\",\n      \"result\": \"positive\",\n      \"limitation\": \"small sample\"\n    },\n    \"study_B\": {\n      \"method\": \"observational\",\n      \"result\": \"null\",\n      \"limitation\": \"confounding\"\n    },\n    \"comparison\": \"Studies disagree: A found a positive result via randomized design; B found a null result via observational design. A is limited by small sample size; B is limited by confounding. Neither result can be dismissed in favor of the other on available evidence.\"\n  }\n}\n```"
+          },
+          "finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 6162,
+        "completion_tokens": 189,
+        "total_tokens": 6351
+      }
+    }
+  }
+]

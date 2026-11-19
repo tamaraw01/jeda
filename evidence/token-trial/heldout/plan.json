@@ -1,0 +1,47 @@
+{
+  "scope": "heldout",
+  "cases": [
+    "freshness",
+    "unavailable",
+    "duplicate-write",
+    "injection",
+    "tenant-scope",
+    "depth-preserve"
+  ],
+  "repeats": 3,
+  "arms": [
+    "control",
+    "skill",
+    "candidate"
+  ],
+  "endpoint": "http://localhost:20128/v1/chat/completions",
+  "model": "ag/gemini-3.8-flash-low",
+  "seed": 20261120,
+  "settings": {
+    "max_calls": 8,
+    "timeout_s": 90,
+    "concurrency": 2,
+    "temperature": 0,
+    "max_tokens": 1200,
+    "max_answer_bytes": 40000
+  },
+  "skill_sha256": "051e3dbf730992168f63995ffa869df17d77b7aa07aaf238315dd7af30d96ead",
+  "candidate_sha256": "f2b73a76271dc006a79d0de4f0d1fdfd0605730f26a02b9d3a19c89cf49c6164",
+  "fixtures_sha256": "2db17ec344b08265cc5485ccbefff76cab7f441b80c873857aa93d8023cd6f08",
+  "source_sha256": {
+    "runner.py": "08574e555faa09c867db999f56529b1a9cac456724de40af81fc94571f77e5d3",
+    "fixtures.py": "08c2c37e3fe2520fe8b8bf8321bae3299e582cb6332d62d0db4afb9bb3091c58",
+    "summarize.py": "30f94e3ab8e85c4367963afe3e44cd119c9de892f59c6a582bb3d4c04aa4fa6e"
+  },
+  "decision": {
+    "min_saving_pct": 10,
+    "ci_lower_gt_pct": 0,
+    "bootstrap_seed": 7717,
+    "bootstrap_replicates": 2000,
+    "quality_all_pass": true,
+    "accounting_calibrated_required": true
+  },
+  "checks": "Exact artifact, read-back after last write, required sources before write, intact reads, authorized reads only, final message. Recovered argument errors are counted but not quality failures.",
+  "accounting": "Raw gateway usage: prompt+completion must equal total. Cache discounts, other provider conventions and billing reconciliation are external.",
+  "plan_sha256": "6cc0cac7bf3720a8ae605b877a7940b1d37d683a5549ff178615cfee790c8d42"
+}

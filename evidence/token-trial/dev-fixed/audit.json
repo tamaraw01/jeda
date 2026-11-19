@@ -1,0 +1,111 @@
+{
+  "scope": "dev",
+  "sessions": 54,
+  "accounting": "gateway reported; no external billing reconciliation",
+  "source_hashes_verified": true,
+  "response_replay_verified": true,
+  "arms": {
+    "control": {
+      "tokens": 337628,
+      "quality_passes": 16,
+      "sessions": 18,
+      "calls": 85,
+      "response_models": [
+        "gemini-3.8-flash-n"
+      ],
+      "failures": [
+        {
+          "case": "cached-valid",
+          "repeat": 1,
+          "checks": {
+            "artifact": false,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": true,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        },
+        {
+          "case": "cached-valid",
+          "repeat": 2,
+          "checks": {
+            "artifact": false,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": true,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        }
+      ]
+    },
+    "skill": {
+      "tokens": 367623,
+      "quality_passes": 16,
+      "sessions": 18,
+      "calls": 83,
+      "response_models": [
+        "gemini-3.8-flash-n"
+      ],
+      "failures": [
+        {
+          "case": "cached-valid",
+          "repeat": 1,
+          "checks": {
+            "artifact": true,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": true,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        },
+        {
+          "case": "exception-hold",
+          "repeat": 1,
+          "checks": {
+            "artifact": true,
+            "read_back": true,
+            "sources_intact": true,
+            "required_sources_before_write": true,
+            "no_failed_action": false,
+            "final": false,
+            "authorized_only": true
+          }
+        }
+      ],
+      "saving_pct": -8.88,
+      "ci95_pct": [
+        -15.74,
+        -2.82
+      ]
+    },
+    "candidate": {
+      "tokens": 364292,
+      "quality_passes": 18,
+      "sessions": 18,
+      "calls": 90,
+      "response_models": [
+        "gemini-3.8-flash-n"
+      ],
+      "failures": [],
+      "saving_pct": -7.9,
+      "ci95_pct": [
+        -25.18,
+        -1.26
+      ]
+    }
+  },
+  "savings_claim_pass": false,
+  "limitations": [
+    "Synthetic extraction tasks only; six cases per split.",
+    "Held-out inference was not used to tune instructions; both splits ran concurrently after freeze.",
+    "Quality failures prevent a quality-parity claim.",
+    "Gateway usage has not been reconciled against provider billing.",
+    "Confidence intervals are exploratory with only six clusters."
+  ]
+}

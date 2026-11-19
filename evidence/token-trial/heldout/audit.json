@@ -1,0 +1,255 @@
+{
+  "scope": "heldout",
+  "sessions": 54,
+  "accounting": "gateway reported; no external billing reconciliation",
+  "source_hashes_verified": true,
+  "response_replay_verified": true,
+  "arms": {
+    "control": {
+      "tokens": 241386,
+      "quality_passes": 8,
+      "sessions": 18,
+      "calls": 62,
+      "response_models": [
+        "gemini-3.8-flash-n"
+      ],
+      "failures": [
+        {
+          "case": "depth-preserve",
+          "repeat": 1,
+          "checks": {
+            "artifact": false,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": true,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        },
+        {
+          "case": "depth-preserve",
+          "repeat": 2,
+          "checks": {
+            "artifact": false,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": true,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        },
+        {
+          "case": "depth-preserve",
+          "repeat": 3,
+          "checks": {
+            "artifact": false,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": true,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        },
+        {
+          "case": "duplicate-write",
+          "repeat": 2,
+          "checks": {
+            "artifact": false,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": false,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        },
+        {
+          "case": "duplicate-write",
+          "repeat": 3,
+          "checks": {
+            "artifact": true,
+            "read_back": true,
+            "sources_intact": true,
+            "required_sources_before_write": true,
+            "no_failed_action": false,
+            "final": false,
+            "authorized_only": true
+          }
+        },
+        {
+          "case": "freshness",
+          "repeat": 1,
+          "checks": {
+            "artifact": false,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": false,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        },
+        {
+          "case": "freshness",
+          "repeat": 2,
+          "checks": {
+            "artifact": false,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": false,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        },
+        {
+          "case": "freshness",
+          "repeat": 3,
+          "checks": {
+            "artifact": false,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": false,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        },
+        {
+          "case": "tenant-scope",
+          "repeat": 1,
+          "checks": {
+            "artifact": false,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": false,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        },
+        {
+          "case": "tenant-scope",
+          "repeat": 3,
+          "checks": {
+            "artifact": false,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": false,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        }
+      ]
+    },
+    "skill": {
+      "tokens": 380741,
+      "quality_passes": 17,
+      "sessions": 18,
+      "calls": 87,
+      "response_models": [
+        "gemini-3.8-flash-n"
+      ],
+      "failures": [
+        {
+          "case": "unavailable",
+          "repeat": 2,
+          "checks": {
+            "artifact": false,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": false,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        }
+      ],
+      "saving_pct": -57.73,
+      "ci95_pct": [
+        -125.93,
+        -15.85
+      ]
+    },
+    "candidate": {
+      "tokens": 311777,
+      "quality_passes": 14,
+      "sessions": 18,
+      "calls": 78,
+      "response_models": [
+        "gemini-3.8-flash-n"
+      ],
+      "failures": [
+        {
+          "case": "freshness",
+          "repeat": 1,
+          "checks": {
+            "artifact": false,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": false,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        },
+        {
+          "case": "tenant-scope",
+          "repeat": 1,
+          "checks": {
+            "artifact": false,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": false,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        },
+        {
+          "case": "tenant-scope",
+          "repeat": 2,
+          "checks": {
+            "artifact": false,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": false,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        },
+        {
+          "case": "tenant-scope",
+          "repeat": 3,
+          "checks": {
+            "artifact": false,
+            "read_back": false,
+            "sources_intact": true,
+            "required_sources_before_write": false,
+            "no_failed_action": true,
+            "final": false,
+            "authorized_only": true
+          }
+        }
+      ],
+      "saving_pct": -29.16,
+      "ci95_pct": [
+        -76.84,
+        0.85
+      ]
+    }
+  },
+  "savings_claim_pass": false,
+  "limitations": [
+    "Synthetic extraction tasks only; six cases per split.",
+    "Held-out inference was not used to tune instructions; both splits ran concurrently after freeze.",
+    "Quality failures prevent a quality-parity claim.",
+    "Gateway usage has not been reconciled against provider billing.",
+    "Confidence intervals are exploratory with only six clusters."
+  ]
+}
