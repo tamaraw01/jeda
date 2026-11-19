@@ -1,0 +1,16 @@
+{
+  "cases": [
+    "invoices",
+    "repair",
+    "policy"
+  ],
+  "repeats": 2,
+  "arms": [
+    "control",
+    "jeda"
+  ],
+  "skill_sha256": "051e3dbf730992168f63995ffa869df17d77b7aa07aaf238315dd7af30d96ead",
+  "checks": "Exact artifact, preserved inputs, actual tests, post-write verification, no tool errors.",
+  "limits": "12 sessions, max 8 calls per session, max 1400 completion tokens per call",
+  "usage": "Gateway reports are descriptive only, not billing proof. Payloads retained for paired input checks."
+}

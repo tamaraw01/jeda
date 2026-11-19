@@ -1,0 +1,72 @@
+{
+  "sessions": 12,
+  "cases": 3,
+  "quality_passes": {
+    "control": 5,
+    "jeda": 6
+  },
+  "reported_tokens": {
+    "control": 47095,
+    "jeda": 303650
+  },
+  "request_bytes": {
+    "control": 95587,
+    "jeda": 136072
+  },
+  "tool_calls": {
+    "control": 24,
+    "jeda": 20
+  },
+  "artifact_checks_passed": 11,
+  "failures": [
+    {
+      "case": "invoices",
+      "repeat": 2,
+      "arm": "control",
+      "checks": {
+        "artifact": false,
+        "inputs_unchanged": true,
+        "post_write_verification": true
+      },
+      "error": null,
+      "denied_actions": []
+    }
+  ],
+  "models": {
+    "gpt-6.1-sol": 52
+  },
+  "usage_eligible": false,
+  "release": "HOLD",
+  "limitations": [
+    "Fixture file tasks, not customer production work.",
+    "Small single-gateway sample; backend revision is not independently pinned.",
+    "Reported usage cannot support savings claims while matched input accounting inversion is reproducible.",
+    "Exact artifact checks do not establish quality equivalence for research or arbitrary software."
+  ],
+  "probe": [
+    {
+      "arm": "control",
+      "repeat": 1,
+      "request_bytes": 9745,
+      "prompt_tokens": 16936
+    },
+    {
+      "arm": "control",
+      "repeat": 2,
+      "request_bytes": 9745,
+      "prompt_tokens": 16936
+    },
+    {
+      "arm": "jeda",
+      "repeat": 1,
+      "request_bytes": 12124,
+      "prompt_tokens": 3189
+    },
+    {
+      "arm": "jeda",
+      "repeat": 2,
+      "request_bytes": 12124,
+      "prompt_tokens": 3189
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+GENERAL
+Records expire after 30 calendar days.
+EXCEPTIONS
+Disputed records remain until the dispute closes.
+Legacy accounts retain records for 90 calendar days.
+A legal hold overrides both periods.

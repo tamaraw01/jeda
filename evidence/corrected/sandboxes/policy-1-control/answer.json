@@ -1,0 +1,8 @@
+{
+  "general_days": 30,
+  "legacy_days": 90,
+  "exceptions": [
+    "Disputed records remain until the dispute closes.",
+    "A legal hold overrides both periods."
+  ]
+}
